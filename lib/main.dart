@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travel/pages/add_page.dart';
 import 'package:travel/pages/home_page.dart';
-import 'package:travel/pages/sign_up.dart';
 import 'package:travel/saved_data.dart';
 
 void main() async{

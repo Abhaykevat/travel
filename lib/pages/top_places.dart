@@ -23,11 +23,14 @@ class _TopPlacesState extends State<TopPlaces> {
                   Material(
                     borderRadius: BorderRadius.circular(30),
                     elevation: 3.0,
-                    child: Container(
-                      padding: EdgeInsets.all(8),
-                      decoration: BoxDecoration(color: Colors.blue,
-                          borderRadius: BorderRadius.circular(30)),
-                        child: Icon(Icons.arrow_back,color: Colors.white,)),
+                    child: GestureDetector(
+                      onTap: () => Navigator.pop(context),
+                      child: Container(
+                        padding: EdgeInsets.all(8),
+                        decoration: BoxDecoration(color: Colors.blue,
+                            borderRadius: BorderRadius.circular(30)),
+                          child: Icon(Icons.arrow_back,color: Colors.white,)),
+                    ),
                   ),
                   SizedBox(width: MediaQuery.of(context).size.width/5,),
                   Text('Top Places',style: TextStyle(color: Colors.blue,fontSize: 28.0,fontWeight: FontWeight.bold),)
